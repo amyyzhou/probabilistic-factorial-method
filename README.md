@@ -1,6 +1,6 @@
 # Probabilistic Factorial Design Analysis of Drug Effects on Gene Expression
 
-This repository contains the code and report for a project investigating the impact of various drug treatments and their combinations on gene expression in the A375 human malignant melanoma cell line, utilizing a probabilistic factorial design approach.
+This repository contains the code and report for a project investigating the impact of various drug treatments and their combinations on gene expression in the A375 human malignant melanoma cell line, using a probabilistic factorial design approach.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ This repository contains the code and report for a project investigating the imp
 
 Understanding how pharmaceutical compounds influence gene expression is crucial for drug discovery and personalized medicine. Traditional high-throughput screening often focuses on single-drug effects, but biological systems involve complex interactions, especially with combination therapies.
 
-This project applies a "probabilistic factorial design" methodology, as described by Shyamal et al. (2025), to systematically identify both individual (main) drug effects and their pairwise interaction effects on gene expression. The approach involves constructing a Fourier basis design matrix to represent drug treatments and then fitting Ridge regression models to quantify their influence on target genes.
+This project applies a "probabilistic factorial design" method, as described by Shyamal et al. (2025), to systematically identify both individual (main) drug effects and their pairwise interaction effects on gene expression. The approach involves constructing a Fourier basis design matrix to represent drug treatments and then fitting Ridge regression models to quantify their influence on target genes.
 
 ## Key Features
 
@@ -81,9 +81,15 @@ These findings provide data-driven hypotheses for further investigation into com
 
 ### Data
 
+The primary dataset used in this project is the **Broad LINCS L1000 dataset (GSE70138)**. The full dataset can be accessed and downloaded from the Gene Expression Omnibus (GEO) or the LINCS Data Portal:
+
+* **GEO Accession:** [GSE70138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138)
+* **LINCS Data Portal:** [L1000 Dataset (GSE70138)](https://www.lincsproject.org/LINCS/datasets/L1000)
+
 The original raw gene expression data (`GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx`, ~5.8 GB) is **not included** in this repository due to its large size and GitHub's file limits. The project uses a pre-processed and subsetted HDF5 file: `GSE70138_A375_subset_expression.h5`.
 
 This `GSE70138_A375_subset_expression.h5` file *is* included and managed by Git LFS. When you clone the repository, Git LFS should automatically download it. If you encounter issues, ensure Git LFS is installed and run `git lfs pull` in your repository.
+
 
 ### Installation
 

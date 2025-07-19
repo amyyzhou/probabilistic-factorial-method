@@ -60,7 +60,7 @@ These findings provide data-driven hypotheses for further investigation into com
 └── Probabilistic Factorial Design Project/
 ├── main.tex                  # Main LaTeX report document
 ├── references.bib            # Bibliography file for the LaTeX report
-├── analysis_script.ipynb       # Python script for data processing and modeling
+├── analysis_script.py        # Python script for data processing and modeling
 ├── GSE70138_A375_subset_expression.h5 # Subsetted gene expression data (managed by Git LFS)
 ├── GSE70138_Broad_LINCS_sig_info_2017-03-06.txt # Metadata: Signature information
 ├── GSE70138_Broad_LINCS_pert_info.txt # Metadata: Perturbagen (drug) information

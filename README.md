@@ -106,7 +106,7 @@ Follow these steps to set up the project locally:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/amyyzhou/probabilistic-factorial-method.git](https://github.com/amyyzhou/probabilistic-factorial-method.git)
+    git clone https://github.com/amyyzhou/probabilistic-factorial-method.git
     ```
 2.  **Navigate into the project directory:**
     ```bash

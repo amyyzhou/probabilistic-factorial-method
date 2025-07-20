@@ -31,7 +31,7 @@ file_paths = {
 # Maximum number of A375 active drug samples to include in the subset.
 # Set to None to include all available A375 active drug samples.
 # You can adjust this based on your system's memory.
-MAX_SAMPLES_TO_EXTRACT = 1000
+MAX_SAMPLES_TO_EXTRACT = 2000
 
 # Number of genes to randomly select and extract.
 # Set to None to extract all genes that are in the filtered samples.

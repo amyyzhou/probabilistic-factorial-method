@@ -1,6 +1,6 @@
 # Probabilistic Factorial Design Analysis of Drug Effects on Gene Expression
 
-This repository contains the code and report for a project investigating the impact of various drug treatments and their combinations on gene expression in the A375 human malignant melanoma cell line, using a probabilistic factorial design approach.
+This repository contains the code and report for a project investigating the impact of various drug treatments and their combinations on gene expression in the A375 human malignant melanoma cell line, utilizing a probabilistic factorial design approach.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ This repository contains the code and report for a project investigating the imp
 
 Understanding how pharmaceutical compounds influence gene expression is crucial for drug discovery and personalized medicine. Traditional high-throughput screening often focuses on single-drug effects, but biological systems involve complex interactions, especially with combination therapies.
 
-This project applies a "probabilistic factorial design" method, as described by Shyamal et al. (2025), to systematically identify both individual (main) drug effects and their pairwise interaction effects on gene expression. The approach involves constructing a Fourier basis design matrix to represent drug treatments and then fitting Ridge regression models to quantify their influence on target genes.
+This project applies a "probabilistic factorial experimental design" method, as described by Shyamal et al. (2025), to systematically identify both individual (main) drug effects and their pairwise interaction effects on gene expression. The approach involves constructing a Fourier basis design matrix to represent drug treatments and then fitting Ridge regression models to quantify their influence on target genes.
 
 ## Key Features
 
@@ -58,16 +58,17 @@ These findings provide data-driven hypotheses for further investigation into com
 .
 ├── README.md                     # This README file
 └── Probabilistic Factorial Design Project/
-├── main.tex                  # Main LaTeX report document
-├── references.bib            # Bibliography file for the LaTeX report
-├── analysis_script.py        # Python script for data processing and modeling
-├── GSE70138_A375_subset_expression.h5 # Subsetted gene expression data (managed by Git LFS)
-├── GSE70138_Broad_LINCS_sig_info_2017-03-06.txt # Metadata: Signature information
-├── GSE70138_Broad_LINCS_pert_info.txt # Metadata: Perturbagen (drug) information
-├── GSE70138_Broad_LINCS_gene_info_2017-03-06.txt # Metadata: Gene information
-├── GSE70138_Broad_LINCS_cell_info_2017-04-28.txt # Metadata: Cell line information
-├── .gitignore                # Specifies files/folders to ignore (e.g., original .gctx)
-└── .gitattributes            # Git LFS configuration file
+    ├── main.tex                  # Main LaTeX report document
+    ├── references.bib            # Bibliography file for the LaTeX report
+    ├── analysis_script.py        # Python script for data processing and modeling
+    ├── cut_gctx_data.py          # Python script to generate the subsetted HDF5 data
+    ├── GSE70138_A375_subset_expression.h5 # Subsetted gene expression data (managed by Git LFS)
+    ├── GSE70138_Broad_LINCS_sig_info_2017-03-06.txt # Metadata: Signature information
+    ├── GSE70138_Broad_LINCS_pert_info_2017-03-06.txt # Metadata: Perturbagen (drug) information
+    ├── GSE70138_Broad_LINCS_gene_info_2017-03-06.txt # Metadata: Gene information
+    ├── GSE70138_Broad_LINCS_cell_info_2017-04-28.txt # Metadata: Cell line information
+    ├── .gitignore                # Specifies files/folders to ignore (e.g., original .gctx)
+    └── .gitattributes            # Git LFS configuration file
 ```
 
 ## Setup and Running the Project
@@ -86,10 +87,19 @@ The primary dataset used in this project is the **Broad LINCS L1000 dataset (GSE
 * **GEO Accession:** [GSE70138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138)
 * **LINCS Data Portal:** [L1000 Dataset (GSE70138)](https://www.lincsproject.org/LINCS/datasets/L1000)
 
-The original raw gene expression data (`GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx`, ~5.8 GB) is **not included** in this repository due to its large size and GitHub's file limits. The project uses a pre-processed and subsetted HDF5 file: `GSE70138_A375_subset_expression.h5`.
+**Important**: Due to its large size (~5.8 GB), the original raw gene expression data (`GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx`) is not included in this repository. While a smaller subset (`GSE70138_A375_subset_expression.h5`) is committed via Git LFS, for reliable operation, it is highly recommended to generate this subsetted file locally.
 
-This `GSE70138_A375_subset_expression.h5` file *is* included and managed by Git LFS. When you clone the repository, Git LFS should automatically download it. If you encounter issues, ensure Git LFS is installed and run `git lfs pull` in your repository.
+To do this:
+1. **Download the original GCTX file:**
+Obtain the ```GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx.gz``` file from one of these sources:
+* **GEO Accession:** [GSE70138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138) -> Look for the GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx.gz file under "SRA Run Selector" or "FTP link"
+* **LINCS Data Portal:** [L1000 Dataset (GSE70138)](https://www.lincsproject.org/LINCS/datasets/L1000)
 
+2. **Unzip the downloaded file:**
+The file is gzipped (```.gz```). Unzip it to get ```GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx```.
+
+3. **Place the unzipped ```.gctx``` file:**
+Move the unzipped ```GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx``` file into the directory of your cloned repository.
 
 ### Installation
 

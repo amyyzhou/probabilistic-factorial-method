@@ -59,7 +59,7 @@ These findings provide data-driven hypotheses for further investigation into com
 ├── README.md                     # This README file
 ├── main.tex                  # Main LaTeX report document
 ├── references.bib            # Bibliography file for the LaTeX report
-├── analysis_script.py        # Python script for data processing and modeling
+├── analysis_script.ipynb     # Python script for data processing and modeling
 ├── cut_gctx_data.py          # Python script to generate the subsetted HDF5 data
 ├── GSE70138_A375_subset_expression.h5 # Subsetted gene expression data (managed by Git LFS)
 ├── GSE70138_Broad_LINCS_sig_info_2017-03-06.txt # Metadata: Signature information

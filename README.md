@@ -131,6 +131,8 @@ Follow these steps to set up the project locally:
     ```
 
 ### Compiling the LaTeX Report
+If you wish to view report on web, please visit [Overleaf](https://www.overleaf.com/read/jqsmhnhrgfyj#ff08aa).
+
 The project includes a detailed report in LaTeX format (main.tex). Make sure you are in the Probabilistic Factorial Design Project directory.
 1. Ensure references.bib is present: This file contains the bibliography entry and should be in the same directory as main.tex.
 2. Compile the LaTeX document: For proper compilation of citations and bibliography using biblatex and biber, you need to run a specific sequence of commands.

@@ -57,18 +57,17 @@ These findings provide data-driven hypotheses for further investigation into com
 ```bash
 .
 ├── README.md                     # This README file
-└── Probabilistic Factorial Design Project/
-    ├── main.tex                  # Main LaTeX report document
-    ├── references.bib            # Bibliography file for the LaTeX report
-    ├── analysis_script.py        # Python script for data processing and modeling
-    ├── cut_gctx_data.py          # Python script to generate the subsetted HDF5 data
-    ├── GSE70138_A375_subset_expression.h5 # Subsetted gene expression data (managed by Git LFS)
-    ├── GSE70138_Broad_LINCS_sig_info_2017-03-06.txt # Metadata: Signature information
-    ├── GSE70138_Broad_LINCS_pert_info_2017-03-06.txt # Metadata: Perturbagen (drug) information
-    ├── GSE70138_Broad_LINCS_gene_info_2017-03-06.txt # Metadata: Gene information
-    ├── GSE70138_Broad_LINCS_cell_info_2017-04-28.txt # Metadata: Cell line information
-    ├── .gitignore                # Specifies files/folders to ignore (e.g., original .gctx)
-    └── .gitattributes            # Git LFS configuration file
+├── main.tex                  # Main LaTeX report document
+├── references.bib            # Bibliography file for the LaTeX report
+├── analysis_script.py        # Python script for data processing and modeling
+├── cut_gctx_data.py          # Python script to generate the subsetted HDF5 data
+├── GSE70138_A375_subset_expression.h5 # Subsetted gene expression data (managed by Git LFS)
+├── GSE70138_Broad_LINCS_sig_info_2017-03-06.txt # Metadata: Signature information
+├── GSE70138_Broad_LINCS_pert_info_2017-03-06.txt # Metadata: Perturbagen (drug) information
+├── GSE70138_Broad_LINCS_gene_info_2017-03-06.txt # Metadata: Gene information
+├── GSE70138_Broad_LINCS_cell_info_2017-04-28.txt # Metadata: Cell line information
+├── .gitignore                # Specifies files/folders to ignore (e.g., original .gctx)
+└── .gitattributes            # Git LFS configuration file
 ```
 
 ## Setup and Running the Project
@@ -111,7 +110,7 @@ Follow these steps to set up the project locally:
     ```
 2.  **Navigate into the project directory:**
     ```bash
-    cd "probabilistic-factorial-method/Probabilistic Factorial Design Project"
+    cd "probabilistic-factorial-method-main"
     ```
 3.  **Install Git LFS** (if you haven't already):
     Follow instructions at [https://git-lfs.com/](https://git-lfs.com/). Then run:

@@ -110,7 +110,7 @@ Follow these steps to set up the project locally:
     ```
 2.  **Navigate into the project directory:**
     ```bash
-    cd "probabilistic-factorial-method-main"
+    cd "probabilistic-factorial-method"
     ```
 3.  **Install Git LFS** (if you haven't already):
     Follow instructions at [https://git-lfs.com/](https://git-lfs.com/). Then run:

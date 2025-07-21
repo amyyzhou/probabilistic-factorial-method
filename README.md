@@ -84,7 +84,6 @@ These findings provide data-driven hypotheses for further investigation into com
 The primary dataset used in this project is the **Broad LINCS L1000 dataset (GSE70138)**. The full dataset can be accessed and downloaded from the Gene Expression Omnibus (GEO) or the LINCS Data Portal:
 
 * **GEO Accession:** [GSE70138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138)
-* **LINCS Data Portal:** [L1000 Dataset (GSE70138)](https://www.lincsproject.org/LINCS/datasets/L1000)
 
 **Important**: Due to its large size (~5.8 GB), the original raw gene expression data (`GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx`) is not included in this repository. While a smaller subset (`GSE70138_A375_subset_expression.h5`) is committed via Git LFS, for reliable operation, it is highly recommended to generate this subsetted file locally.
 

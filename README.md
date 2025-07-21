@@ -91,7 +91,6 @@ To do this:
 1. **Download the original GCTX file:**
 Obtain the ```GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx.gz``` file from one of these sources:
 * **GEO Accession:** [GSE70138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138) -> Look for the GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx.gz file under "SRA Run Selector" or "FTP link"
-* **LINCS Data Portal:** [L1000 Dataset (GSE70138)](https://www.lincsproject.org/LINCS/datasets/L1000)
 
 2. **Unzip the downloaded file:**
 The file is gzipped (```.gz```). Unzip it to get ```GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx```.

@@ -145,11 +145,13 @@ The compiled PDF report (main.pdf) will be generated in the same directory.
 ## Citation
 If you find this work useful, please consider citing the original paper:
 ```bash
-@article{shyamal2024probabilistic,
-  title={Probabilistic Factorial Experimental Design for Combinatorial Interventions},
-  author={Shyamal, Divya and Zhang, Jiaqi and Uhler, Caroline},
-  journal={arXiv preprint arXiv:2506.03363},
-  year={2025},
-  url={[https://doi.org/10.48550/arXiv.2506.03363](https://doi.org/10.48550/arXiv.2506.03363)}
+@misc{shyamal2025probabilisticfactorialexperimentaldesign,
+      title={Probabilistic Factorial Experimental Design for Combinatorial Interventions}, 
+      author={Divya Shyamal and Jiaqi Zhang and Caroline Uhler},
+      year={2025},
+      eprint={2506.03363},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2506.03363}, 
 }
 ```

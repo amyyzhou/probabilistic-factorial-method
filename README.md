@@ -40,6 +40,11 @@ The analysis was performed on a subset of the GSE70138 Broad LINCS L1000 dataset
 * **Gene Selection:** 10 landmark genes were randomly selected for detailed modeling.
 * **Regression Model:** Ridge Regression (with `alpha=1.0`) was used to fit the models.
 
+### Limitation
+The R-squared and MSE metrics presented here rely on in-sample evaluation, a decision driven by two factors. 
+1. The primary goal was to validate the implementation of the probabilistic factorial design method with its Fourier basis construction in a real-world context.
+2. An initial misunderstanding of data compatibility between LINCS L1000 Phase I and II (due to differences in perturbation structure, preprocessing like MODZ vs. COMPZ, and treatment metadata) precluded straightforward external validation. This realization, alongside computational constraints, led us to prioritize internal consistency for this initial phase. Future work will crucially involve implementing robust cross-validation strategies to assess model generalizability.
+
 ## Results Summary
 
 The Ridge regression models consistently achieved high R-squared values (ranging from 0.6698 to 0.9804), indicating strong predictive power of the drug features on gene expression changes. A key finding is the **predominance of pairwise drug-drug interaction effects** among the top estimated coefficients, highlighting the critical role of drug combinations.
